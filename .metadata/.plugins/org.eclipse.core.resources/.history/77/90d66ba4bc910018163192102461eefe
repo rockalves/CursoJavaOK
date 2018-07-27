@@ -1,0 +1,22 @@
+package Controle;
+
+import java.awt.Panel;
+import java.nio.channels.ShutdownChannelGroupException;
+
+import javax.swing.JOptionPane;
+
+/*
+ * Criar um programa que receba 
+ * um número e verifique se ele 
+ * está entre 0 e 10 e é par;
+ */
+
+public class Exercicio1Aula42 {
+	public static void main(String[] args) {
+		String sNumero = JOptionPane.showInputDialog("Informe um número");
+		int num = Integer.parseInt(sNumero);
+		if (num >= 0 || num <= 10){
+			JOptionPane.showMessageDialog(null,"O número está entre 0 e 10");
+		}
+	}
+}
