@@ -1,0 +1,24 @@
+package Controle;
+
+import javax.swing.JOptionPane;
+
+/*
+ * Crie um programa que recebe valores 
+ * e ao final imprima o maior número.
+ * 
+ */
+public class Exercicio9Aula42 {
+	public static void main(String[] args) {
+		int tamanho = 0;
+		tamanho = Integer.parseInt(JOptionPane.showInputDialog("Insira aqui o número de valores a serem inseridos"));
+		int[] valor = new int[tamanho];
+		int max = 0;
+		for (int i = 0; i < tamanho; i++) {
+			valor[i] = Integer.parseInt(JOptionPane.showInputDialog("Insira aqui o valor " + i+1));
+			if (valor[i] > max) {
+				max = valor[i];
+			}
+		}
+		JOptionPane.showMessageDialog(null, "O maior valor dentre os " + tamanho + " informados é o "+max);
+	}
+}

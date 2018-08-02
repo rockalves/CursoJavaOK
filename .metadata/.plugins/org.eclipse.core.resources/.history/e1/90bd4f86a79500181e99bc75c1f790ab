@@ -1,0 +1,29 @@
+package Controle;
+
+import javax.swing.JOptionPane;
+
+/*
+ * Criar um programa que receba um número 
+ * e diga se ele é um número primo.
+ */
+
+
+public class Exercicio4Aula42 {
+	public static void main(String[] args) {
+		int num = Integer.parseInt(JOptionPane.showInputDialog("Informe o número para verificar se é primo"));
+		boolean ehPrimo = true;
+		for(int i=2; i<num; i++){
+			//
+			if (num % i == 0){
+				ehPrimo = false;
+				break;
+			}
+		}
+		if (ehPrimo){
+			JOptionPane.showMessageDialog(null, "É um número primo! \nNúmero : "+num);
+		} else {
+			JOptionPane.showMessageDialog(null, " NÃO é um número primo! \nNúmero :"+num);
+		}
+
+	}
+}

@@ -7,7 +7,8 @@
 <fullyQualifiedTypeName name="java.awt.datatransfer.SystemFlavorMap"/>
 <fullyQualifiedTypeName name="java.nio.channels.ShutdownChannelGroupException"/>
 <fullyQualifiedTypeName name="java.awt.Panel"/>
-<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>

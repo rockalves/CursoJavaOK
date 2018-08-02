@@ -1,5 +1,41 @@
 package Controle;
 
-public class Exercicio5Aula42 {
+import javax.swing.JOptionPane;
 
+/*
+ * Criar um programa que receba um número 
+ * e diga se ele é um número primo.
+ * Refatorar este exercício 04, utilizando a estrutura switch.
+ */
+
+public class Exercicio5Aula42 {
+	public static void main(String[] args) {
+		int num = Integer.parseInt(JOptionPane.showInputDialog("Informe o número para verificar se é primo"));
+		int ehPrimo = 1;
+
+		for (int i = 2; i < num; i++) {
+			if (num % i == 0) {
+				ehPrimo = 0;
+				break;
+			}
+		}
+
+		switch (ehPrimo) {
+		case 0:
+			JOptionPane.showMessageDialog(null, "NÃO é um número primo! \nNúmero :" + num);
+			break;
+		case 1:
+			JOptionPane.showMessageDialog(null, "É um número primo! \nNúmero : " + num);
+			break;
+		}
+
+		/*
+		 * for(int i=2; i<num; i++){ if (num % i == 0){ ehPrimo = false; break;
+		 * } } if (ehPrimo){ JOptionPane.showMessageDialog(null,
+		 * "É um número primo! \nNúmero : "+num); } else {
+		 * JOptionPane.showMessageDialog(null,
+		 * "NÃO é um número primo! \nNúmero :"+num); }
+		 */
+
+	}
 }

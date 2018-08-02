@@ -1,0 +1,23 @@
+package Controle;
+/*
+ * Criar um programa que enquanto 
+ * estiver recebendo números positivos, 
+ * imprime no console a soma dos números inseridos, 
+ * caso receba um número negativo, encerre o programa. 
+ * Tente utilizar a estrutura do while.
+ */
+import java.util.Scanner;
+
+public class Exercicio7Aula42 {
+	public static void main(String[] args) { 
+		Scanner s = new Scanner(System.in);	
+		int soma=0;
+		int numero = 0;
+		do {
+			numero = Integer.parseInt(s.nextLine());
+			soma = numero+soma;	
+			System.out.println("Resultao da soma dos números inseridos "+ soma+"\n");
+		}while (numero != -1);
+	s.close();
+	}
+}

@@ -1,0 +1,38 @@
+package Controle;
+
+import javax.swing.JOptionPane;
+
+/*
+ * Jogo da adivinhação: Tentar adivinhar um número entre 0 - 100. 
+ * Armazene um número aleatório em uma variável. 
+ * O Jogador tem 10 tentativas para adivinhar o número gerado. 
+ * Ao final de cada tentativa, imprima a quantidade de tentativas restantes, 
+ * e imprima se o número inserido é maior ou menor do que o número armazenado.
+ * 
+ */
+
+public class Exercicio6Aula42 {
+	public static void main(String[] args) {
+		final int tamanho = 11;
+		int num = Integer.parseInt(JOptionPane.showInputDialog("Informe o número a ser adivinhado"));
+		boolean achou = false;
+		for (int i = 1; i <= tamanho; i++) {
+			int tentativa = 0;
+			tentativa = Integer.parseInt(
+					JOptionPane.showInputDialog("Informe a tentativa. \nRestam " + (tamanho - i) + " tentativas"));
+			if (tentativa == num) {
+				achou = true;
+				break;
+			} else if (tentativa < num) {
+				JOptionPane.showMessageDialog(null, "O número informado é menor que o número a ser adivinhado");
+			} else if (tentativa > num) {
+				JOptionPane.showMessageDialog(null, "O número informado é maior que o número a ser adivinhado");
+			}
+		}
+		if (achou) {
+			JOptionPane.showMessageDialog(null, "Você acertou :" + num);
+		} else {
+			JOptionPane.showMessageDialog(null, "Suas tentativas se esgotaram, o número correto é: " + num);
+		}
+	}
+}
