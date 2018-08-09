@@ -1,0 +1,13 @@
+package Classe;
+
+public class DataTeste {
+	public static void main(String[] args) {
+		Data nascimento = new Data();
+		nascimento.dia =28;
+		nascimento.mes=10;
+		nascimento.ano=1987;
+		
+		System.out.println(nascimento.formatar());
+//		System.out.printf("%d/%d/%d",nascimento.dia,nascimento.mes,nascimento.ano);
+	}
+}

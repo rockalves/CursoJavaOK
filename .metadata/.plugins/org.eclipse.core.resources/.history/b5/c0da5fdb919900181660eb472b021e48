@@ -1,0 +1,9 @@
+package Classe;
+
+public class FuncionarioTeste {
+	public static void main(String[] args) {
+		Funcionario func1 = new Funcionario("Asd", 4.600, "Analista de Sistemas");
+		func1.imprimir();
+	}
+
+}
